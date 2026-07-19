@@ -404,7 +404,6 @@
         </div>
       </section>
     </main>
-
     <footer id="footer" class="footer-section">
       <div class="container footer-container">
         <div class="footer-logo-block">
@@ -471,8 +470,10 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
-      <div id="modal" class="modal">
+
+    <!-- МОДАЛЬНОЕ ОКНО (Внешний блок с id="modal" и class="backdrop") -->
+    <div id="modal" class="backdrop" data-modal>
+      <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
@@ -490,12 +491,11 @@
                 class="modal-input"
                 required
               />
-              <svg class="modal-icon user-icon" width="12" height="12">
+              <svg class="modal-icon user-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-user"></use>
               </svg>
             </div>
           </div>
-
           <div class="modal-field-wrapper">
             <label for="user-phone" class="modal-label">Phone</label>
             <div class="modal-input-wrapper">
@@ -506,28 +506,26 @@
                 class="modal-input"
                 required
               />
-              <svg class="modal-icon phone-icon" width="13" height="13">
+              <svg class="modal-icon phone-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
-
           <div class="modal-field-wrapper">
-            <label for="user-email-modal" class="modal-label">Email</label>
+            <label for="user-email" class="modal-label">Email</label>
             <div class="modal-input-wrapper">
               <input
                 type="email"
-                name="user-email-modal"
-                id="user-email-modal"
+                name="user-email"
+                id="user-email"
                 class="modal-input"
                 required
               />
-              <svg class="modal-icon email-icon" width="15" height="12">
+              <svg class="modal-icon email-icon" width="18" height="24">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
-
           <div class="modal-field-wrapper comment-wrapper">
             <label for="user-comment" class="modal-label">Comment</label>
             <textarea
@@ -558,12 +556,10 @@
               </span>
             </label>
           </div>
-
           <button type="submit" class="modal-submit-btn">Send</button>
         </form>
       </div>
     </div>
-
     <script src="./javascript/modal.js"></script>
   </body>
 </html>

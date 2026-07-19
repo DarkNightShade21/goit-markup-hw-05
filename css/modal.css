@@ -8,7 +8,6 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 999;
 }
@@ -30,7 +29,6 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 72px 24px 24px 24px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -44,7 +42,7 @@
   align-items: center;
   justify-content: center;
   background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   padding: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -66,7 +64,7 @@
   fill: #ffffff;
 }
 
-/* Елементи форми */
+/* Элементы формы */
 .modal-title {
   font-weight: 500;
   font-size: 16px;
@@ -147,7 +145,7 @@
   border-color: #4d5ae5;
 }
 
-/* Кастомний чекбокс */
+/* Кастомный чекбокс */
 .modal-checkbox-wrapper {
   margin-bottom: 24px;
 }
@@ -189,6 +187,7 @@
 
 .privacy-link {
   color: #4d5ae5;
+  text-decoration: underline;
 }
 
 .modal-submit-btn {
@@ -204,6 +203,7 @@
   border-radius: 4px;
   cursor: pointer;
   margin: 0 auto;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

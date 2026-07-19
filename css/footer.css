@@ -5,7 +5,7 @@
 
 .footer-container {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline; /* ИСПРАВЛЕНО: вместо flex-start для точного выравнивания */
 }
 
 .footer-logo-block {
@@ -81,16 +81,22 @@
   border: 1px solid var(--white);
   background-color: transparent;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   padding-left: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--white);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-subscribe-input::placeholder {
-  color: var(--white);
+  color: #ffffff; 
+}
+
+.footer-subscribe-input:focus {
+  border-color: #4d5ae5;
+  outline: none;
 }
 
 .footer-subscribe-btn {
